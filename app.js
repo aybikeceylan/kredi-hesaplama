@@ -26,10 +26,10 @@ document.querySelector(".btn").addEventListener("click", () => {
         if (krediTipi === "Konut Kredisi") {
             faizOranı = 1.29
         }
-        else if (krediTipi === 'Ihtiyac Kredisi') {
+        else if (krediTipi === 'İhtiyaç Kredisi') {
             faizOranı = 1.99;
         }
-        else if (krediTipi === 'Arac Kredisi') {
+        else if (krediTipi === 'Araç Kredisi') {
             faizOranı = 1.79;
         }
 
