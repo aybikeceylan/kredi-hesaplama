@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form class="m-4">
+      <h2 class="head text-warning">Kredi Hesaplama</h2>
+      <div class="form-group">
+        <label for="select">Kredi</label>
+        <select class="form-select" id="select">
+          <option>Seçiniz</option>
+          <option>Konut Kredisi</option>
+          <option>İhtiyaç Kredisi</option>
+          <option>Araç Kredisi</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="Input1">Vade</label>
+        <input type="text" class="form-control" id="Input1" />
+      </div>
+      <div class="form-group">
+        <label for="Input2">Tutar</label>
+        <input type="text" class="form-control" id="Input2" />
+      </div>
+      <button type="button" class="btn btn-secondary w-100 mt-3">
+        Hesapla
+      </button>
+    </form>
+
+    <section class="sonuclar m-4 d-none">
+      <h2 class="mt-3 text-warning">Kredi Bilgileri</h2>
+      <table class="table table-bordered border-warning mt-4">
+        <tbody>
+          <tr>
+            <th>Kredi Miktari</th>
+            <td class="miktar">₺</td>
+            <th>Kredi Tipi</th>
+            <td class="tip"></td>
+          </tr>
+          <tr>
+            <th>Vade</th>
+            <td class="vade"></td>
+            <th>Faiz Orani</th>
+            <td class="oran"></td>
+          </tr>
+          <tr>
+            <th>Toplam Tutar</th>
+            <td class="toplam">₺</td>
+            <th>Taksit Tutari</th>
+            <td class="taksit">₺</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
