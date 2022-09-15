@@ -15,7 +15,7 @@ document.querySelector(".btn").addEventListener("click", () => {
     console.log(tutar);
     console.log(krediTipi);
 
-    if ((vade === "") && (tutar === "") && (krediTipi === "Seçiniz")) {
+    if (!(vade.value) || !(tutar.value) || (krediTipi === "Seçiniz")) {
         alert("seçim yapınız")
     } else {
         document.querySelector(".miktar").innerHTML = `${tutar}₺`
